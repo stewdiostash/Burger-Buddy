@@ -3,7 +3,7 @@
     <div class="col a">
         <img id="burger-pic" src="/assets/img/tofu-burger.png" alt="burger-pic">
         <h1>Burger Buddy</h1>
-        <p>Enter the burger you'd like to eat and click "Prep it!"</p>
+        <p>Enter the name of the burger you'd like to eat and click "Prep it!"</p>
         <form class="prep-burger" action="">
             <input type="text" id="burger-name" name="burger-name"><br><br>
             <input type="submit" value="Prep it!">
@@ -11,7 +11,7 @@
     </div>
 
     <div class="col b">
-        <h3>Ready to eat</h3>
+        <h3>Ready-to-eat burgers</h3>
 
         {{#each burger_data}}
             {{#unless this.devoured}}
@@ -27,7 +27,7 @@
     </div>
 
     <div class="col c">
-        <h3>Eaten Burgers</h3>
+        <h3>Burgers I've eaten (RIP)</h3>
 
         {{#each burger_data}}
             {{#if this.devoured}}
