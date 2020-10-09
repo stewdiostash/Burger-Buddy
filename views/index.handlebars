@@ -1,0 +1,44 @@
+<div id="container">
+
+    <div class="col a">
+        <img id="burger-pic" src="./img/tofu-burger.png" alt="burger-pic">
+        <h1>Burger Buddy</h1>
+        <p>Enter the burger you'd like to eat and click "Prep it!"</p>
+        <form class="prep-burger" action="">
+            <input type="text" id="burger-name" name="burger-name"><br><br>
+            <input type="submit" value="Prep it!">
+        </form>
+    </div>
+
+    <div class="col b">
+        <h3>Ready to eat</h3>
+
+        {{#each burger_data}}
+            {{#unless this.devoured}}
+                <div class="burger prepped" data-id="{{this.id}}" data-status="{{this.devoured}}">
+                    <p>{{this.id}} {{this.burger_name}}</p>
+                    <button class="eat-it" data-id="{{this.id}}">
+                        Eat it!
+                    </button>
+                </div>
+            {{/unless}}
+        {{/each}}
+
+    </div>
+
+    <div class="col c">
+        <h3>Eaten Burgers</h3>
+
+        {{#each burger_data}}
+            {{#if this.devoured}}
+                <div class="burger eaten" data-id="{{this.id}}" data-status="{{this.devoured}}">
+                    <p>{{this.id}} {{this.burger_name}}</p>
+                </div>
+            {{/if}}
+        {{/each}}
+
+        
+    </div>
+
+</div>
+<script src="" async defer></script>
