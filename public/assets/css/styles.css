@@ -5,23 +5,37 @@
   align-items: center;
 }
 
+.prep-burger{
+    margin-top: 20px;
+}
+
 body {
   margin: 10px;
   background-color: #fecb62;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Itim', cursive;
 }
 
 p {
-  font-size: 17px;
+  font-size: 21px;
   text-align: center;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
-h1
+h1,
+h2,
+h3
 {
   font-family: "Wellfleet", sans-serif;
-  font-size: 34px;
   text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 0px;
 }
 
 #burger-pic {
@@ -30,11 +44,21 @@ h1
 
 .burger {
   margin-top: 20px;
-  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 4px;
-  padding: 10px 10px 20px 10px;
   width: 100%;
 }
+
+.prepped {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 10px 20px 10px;
+}
+
+.eaten {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+
+
 
 button,input[type="submit"] {
   /* display: inline-block; */
